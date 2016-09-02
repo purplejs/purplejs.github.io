@@ -1,0 +1,9 @@
+#inner {
+  width: 400px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+#outer {
+  width: 100%;
+}
