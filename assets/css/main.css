@@ -1,9 +1,147 @@
-#inner {
-  width: 400px;
-  padding-top: 100px;
-  margin: 0 auto;
+@import 'normalize.css';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#outer {
-  width: 100%;
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-header {
+    margin-top: 40px;
+}
+
+.header-github__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url('../img/github-icon.svg') top right no-repeat;
+    background-size: contain;
+}
+
+.header-github__text {
+
+}
+
+.page-header, .page-footer {
+    text-align: center;
+}
+
+.page-header-logo__img {
+    width: 250px;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+.introduction {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.introduction__link--js {
+    color: #1C6EC4;
+}
+
+.introduction__link--java {
+    color: #C8280A;
+}
+
+.get-started {
+    background: #773F9B;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.get-started__text {
+    display: inline-block;
+}
+
+.get-started__link {
+    text-decoration: none;
+}
+
+.get-started__juke {
+    width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: -30px;
+    margin-right: 20px;
+}
+
+.get-started__heading {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.get-started__notice {
+    color: #B87FDB;
+    margin-top: 10px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+
+}
+
+.link-list__item {
+    //display: inline-block;
+    border: 1px solid #773F9B;
+    padding: 20px;
+    margin: 0 23px;
+    flex: 1;
+    text-align: center;
+}
+
+.link-list__link {
+
+}
+
+.link-list__link-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.page-footer {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 750px) {
+
+    .get-started__juke {
+        width: 75px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .link-list {
+        display: block;
+    }
+
+    .link-list__item {
+        margin: 20px 0;
+    }
 }

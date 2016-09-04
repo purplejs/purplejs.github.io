@@ -1,13 +1,58 @@
 <html>
 <head>
-  <title>PurpleJS</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>PurpleJS</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+
 </head>
 <body>
-  <div id="outer">
-    <div id="inner">
-      <img src="assets/images/logo.svg" alt="PurpleJS Logo" width="100%" align="middle">
-    </div>
-  </div>
+    <header class="page-header">
+        <h1>
+            <img class="page-header-logo__img" src="assets/img/purplejs-logo.svg" alt="PurpleJS logo"/>
+            <span class="page-header-logo__text visually-hidden">PurpleJS</span>
+        </h1>
+        <a href="https://github.com/purplejs/" class="header-github__link"><span class="header-github__text visually-hidden">We're on GitHub</span></a>
+    </header>
+
+    <main>
+
+        <div class="introduction container">
+            <p>PurpleJS is a <a href="https://www.javascript.com/" class="introduction__link--js">JavaScript</a> application framework running on the <a href="https://www.java.com" class="introduction__link--java">Java Virtual Machine</a>.<br/>
+                Combine the power of Java and your existing investments with the simplicity of JavaScript. PurpleJS is an alternative to Node.js for Java projects.</p>
+
+        </div>
+
+        <div class="get-started">
+            <div class="container">
+                <a class="get-started__link" href="https://github.com/purplejs/purplejs">
+                    <img src="assets/img/juke.svg" class="get-started__juke" alt="Juke - the PurpleJS mascot"/>
+                    <div class="get-started__text">
+                        <h2 class="get-started__heading">Get started now!</h2>
+                        <p class="get-started__notice">NB: Requires Java 1.8.40 or higher</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="link-list">
+                <li class="link-list__item">
+                    <a class="link-list__link" href="https://github.com/purplejs/purplejs-examples"><img class="link-list__link-icon" src="assets/img/tutorials-icon.svg" alt="Tutorials icon"/>Tutorials</a>
+                </li>
+                <li class="link-list__item">
+                    <a class="link-list__link" href="https://github.com/purplejs/purplejs/wiki"><img class="link-list__link-icon" src="assets/img/documentation-icon.svg" alt="Documentation icon"/>Documentation</a>
+                </li>
+                <li class="link-list__item">
+                    <a class="link-list__link" href="https://github.com/purplejs/purplejs"><img class="link-list__link-icon" src="assets/img/git-icon.svg" alt="Git icon"/>Source Code</a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <a href="https://enonic.com">Proudly sponsored by Enonic</a>
+    </footer>
+
 </body>
 </html>
